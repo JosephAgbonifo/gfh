@@ -3,24 +3,54 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --f: #02cf06;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  @keyframes scroll {
+    to {
+      transform: translate(calc(-50% - 0.5rem));
+    }
   }
+  /* ---------- Base ---------- */
+  --color-background: #ffffff; /* Pure White */
+  --color-foreground: #545a66; /* Professional Gray (body text) */
+
+  /* ---------- Fonts ---------- */
+  --font-heading: var(--font-arial);
+  --font-body: var(--font-roboto);
+
+  /* ---------- Primary Brand Colors ---------- */
+  --color-brand-primary: #003366; /* Deep Financial Blue */
+  --color-brand-secondary: #005eb8; /* Innovation Blue */
+
+  /* ---------- Secondary / UI Colors ---------- */
+  --color-sky: #4da5ff; /* Digital Sky Blue */
+  --color-surface: #f4f7fa; /* Neutral Light Gray (cards, sections) */
+  --color-text-primary: #0a1f44; /* Tech Black (titles, nav) */
+  --color-text-secondary: #545a66; /* Professional Gray */
+
+  /* ---------- Accent Colors (use sparingly) ---------- */
+  --color-success: #02cf06; /* Growth Green */
+  --color-accent-gold: #d5a021; /* Digital Gold */
+
+  /* ---------- Borders & States ---------- */
+  --color-border: #e3e8ef;
+  --color-focus: #4da5ff;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading), sans-serif;
 }
