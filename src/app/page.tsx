@@ -82,7 +82,7 @@ export default function Gfh() {
         </div>
       </section>
       <div className="py-20 bg-gray-100">
-        <h2 className="text-6xl text-center font-semibold text-brand-secondary mb-5">
+        <h2 className="text-2xl md:text-6xl text-center font-semibold text-brand-secondary mb-5">
           Programmes et Événements
         </h2>
         <p className="m-auto w-3/5 leading-7 text-center">
@@ -137,7 +137,6 @@ export default function Gfh() {
           />
         </div>
       </div>
-      <Footer />
     </div>
   );
 }
