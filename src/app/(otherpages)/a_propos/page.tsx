@@ -55,7 +55,7 @@ export default function Apropos() {
           <h2 className="text-brand-secondary text-4xl font-semibold  mb-10">
             Nos Plans d'Adhésion
           </h2>
-          <p className="pr-20 text-justify  mb-10">
+          <p className="md:pr-20 p-10 text-justify  mb-10">
             Accédez à un réseau dynamique de professionnels de la fintech, à des
             analyses sectorielles et à des ressources premium conçues pour vous
             aider à évoluer en toute confiance.

@@ -1,7 +1,7 @@
 export default function Ecosystem() {
   return (
-    <div className="bg-linear-to-b h-[70vh] flex items-center justify-center from-brand-secondary to-brand-primary rounded md:py-20 text-white ">
-      <div className="flex w-[75%] m-auto">
+    <div className="bg-linear-to-b h-[70vh] md:flex items-center justify-center from-brand-secondary to-brand-primary rounded py-10 md:py-20 text-white ">
+      <div className="md:flex w-[75%] m-auto">
         {" "}
         <div className="flex-1">
           <div className="text-center font-semibold md:text-left text-xl md:text-5xl mb-2">

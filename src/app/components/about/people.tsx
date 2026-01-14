@@ -1,7 +1,7 @@
 export default function People() {
   return (
-    <div className="bg-gray-200 h-[70vh] flex items-center justify-center md:py-20 ">
-      <div className="flex w-[75%] m-auto">
+    <div className="bg-gray-200 h-[70vh] md:flex items-center justify-center py-10 md:py-20 ">
+      <div className="md:flex w-[75%] m-auto">
         {" "}
         <div className="flex-1">
           <div className="text-center font-semibold md:text-left text-xl md:text-4xl text-brand-primary mb-2">

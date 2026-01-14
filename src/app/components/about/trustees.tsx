@@ -76,7 +76,7 @@ export default function TeamGrid({ profile }: { profile: "true" | "false" }) {
 
   return (
     <>
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-10 w-[75%] m-auto py-20">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-10 md:w-[75%] m-auto p-10 md:py-20">
         {team.map((member, index) => (
           <div>
             {" "}

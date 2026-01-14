@@ -1,6 +1,6 @@
 export default function Pioneer() {
   return (
-    <div className="min-h-screen w-[75%] m-auto py-20">
+    <div className="min-h-screen md:w-[75%] m-auto p-10 md:py-20">
       <h1 className="text-xl md:text-5xl">
         Pioneering and leading the advancement of Nigeria’s fintech industry for
         over 7 Years!
