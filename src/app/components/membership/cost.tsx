@@ -1,4 +1,5 @@
 import { MembershipCard } from "@/app/page";
+import Link from "next/link";
 
 const membership = [
   {
@@ -77,6 +78,29 @@ export default function Cost() {
             gradient={item.gradient}
           />
         ))}
+      </div>
+      <div
+        className="py-10 bg-brand-secondary/70 text-white bg-blend-multiply"
+        style={{ backgroundImage: "url('/hero/hero2.jpg')" }}
+      >
+        <div className="md:w-[60%] py-20 text-center  m-auto">
+          <h2 className="text-4xl font-semibold uppercase text-success mb-10">
+            Members
+          </h2>
+          <p className="pr-20 text-justify  mb-10">
+            Our Members Are a Diverse Group of Innovators, Industry Leaders, and
+            Stakeholders Our Members are Committed to Transforming Nigeria’s
+            Financial Landscape. This Growing Network Includes Financial
+            Institutions. Technology Companies, Service Providers, and
+            Regulators Working Together to Promote a Thriving Fintech Ecosystem.
+          </p>
+          <Link
+            href="/membership"
+            className="border border-brand-primary text-brand-secondary py-1 px-4 mt-2 inline-block rounded-sm"
+          >
+            Become a member
+          </Link>
+        </div>
       </div>
     </div>
   );
